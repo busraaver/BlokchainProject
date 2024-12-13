@@ -1,0 +1,142 @@
+/* Genel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  /* Navbar stili */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6A669D;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    size: 18px;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main container */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add student form */
+  .add-student {
+    margin-bottom: 30px;
+  }
+  
+  .add-student form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .add-student input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-student button {
+    padding: 10px 20px;
+    background-color: #003161;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-student button:hover {
+    background-color: #2b5176;
+  }
+  
+  /* Show all students button */
+  .show-btn {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .show-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Student List Table */
+  .student-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .student-list th, .student-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .student-list th {
+    background-color: #003161;
+    color: white;
+  }
+  
+  .student-list td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Silme butonunun stili */
+  .student-list button.delete {
+    padding: 8px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Buton boyutunu küçülttük */
+  }
+  
+  .student-list button.delete i {
+    font-size: 20px; /* Silme ikonu boyutu */
+  }
+  
+  .student-list button.delete:hover {
+    background-color: #c0392b;
+  }
+  

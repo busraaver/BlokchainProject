@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Öğrenci Listesi</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <script type="module" src="index.js"></script>
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-brand">
+        <h3>İstanbul Blokchain Kulübü Öğrenci Listesi</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Ana Sayfa</a></li>
+          <li><a href="#">Kulüp Hakkında</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="add-student">
+        <h2>Yeni Öğrenci Ekle</h2>
+        <form action="#" id="add-student-form">
+          <label for="name">Adın ne:</label>
+          <input id="name" alt="Name" type="text" required />
+          <button type="submit">Ekle!</button>
+        </form>
+        <button id="show-names-btn" class="show-btn">Kulüpte ki Tüm Öğrencileri Göster</button>
+      </section>
+
+      <section class="student-list">
+        <h2>Öğrenci Listesi</h2>
+        <table id="names-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Öğrenci Adı</th>
+              <th>İşlemler</th>
+            </tr>
+          </thead>
+          <tbody id="greeting">
+            <!-- Öğrenci isimleri buraya eklenecek -->
+            <!-- Dinamik olarak buraya veri eklenecek -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
